@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div class="container" id="form">
+        <h1>Calculadora de IMC</h1>
+        <form>
+            <label for="altura">Altura:</label>
+            <input type="number" name="altura" id="altura" placeholder="Digite a altura em metros" step="0.01">
+            <label for="peso">Peso:</label>
+            <input type="number" name="peso" id="peso" placeholder="Digite o peso" step="0.1">
+            <div id="btns">
+                <input type="submit" value="Calcular" id="calc">
+                <input type="reset" value="Limpar" id="reset">
+            </div>
+        </form>
+        <footer>
+        <a href="https://instagram.com/m1guel.cb" target="_blank" rel="external">
+            <img src="assets/images/logo-instagram.jpg" alt="Instagram">
+            <p>M1guel.cb</p>
+        </a>
+        </footer>
+    </div>
+    <div class="container" id="res">
+        <h1>Seu IMC: <span id="imc"></span></h1>
+        <p>Situação atual: <span id="estado"></span>.</p>
+        <h2>Veja a tabela de classificações:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>< 18,5</td>
+                    <td class="abaixo">Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>18,5 e 24,9</td>
+                    <td class="ideal">Peso ideal</td>
+                </tr>
+                <tr>
+                    <td>25 e 29,9</td>
+                    <td class="acima">Acima do peso</td>
+                </tr>
+                <tr>
+                    <td>30 e 34,9</td>
+                    <td class="o1">Obesidade grau I</td>
+                </tr>
+                <tr>
+                    <td>35 e 39,9</td>
+                    <td class="o2">Obesidade grau II</td>
+                </tr>
+                <tr>
+                    <td>> 39,9</td>
+                    <td class="o3">Obesidade grau III</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="back">Voltar</button>
+        <footer>
+        <a href="https://instagram.com/m1guel.cb" target="_blank" rel="external">
+            <img src="assets/images/logo-instagram.jpg" alt="Instagram">
+            <p>M1guel.cb</p>
+        </a>
+        </footer>
+    </div>
+</body>
+<script src="assets/js/main.js"></script>
+</html>
